@@ -24,6 +24,13 @@ export const useAuthStore = defineStore('auth', () => {
         }
     }
 
+    function logout() {
+        user.value.data = null
+        user.value.token = ''
+        localStorage.removeItem('user')
+        router.push('/login')
+    }
+
     async function register(credentials) {
         try {
             const { data } = await AuthService.register(credentials)
@@ -63,6 +70,7 @@ export const useAuthStore = defineStore('auth', () => {
         user,
         login,
         register,
-        cargarLocalStorage
+        cargarLocalStorage,
+        logout
     }
 })

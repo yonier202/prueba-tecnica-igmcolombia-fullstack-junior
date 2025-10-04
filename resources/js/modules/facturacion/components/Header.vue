@@ -57,6 +57,14 @@ onMounted(()=> {
               Roles
             </RouterLink>
           </template>
+
+        <button
+            class="hover:text-blue-400 font-medium transition"
+            @click="authStore.logout()"
+            >
+            Salir
+        </button>
+
         </nav>
       </div>
     </div>
