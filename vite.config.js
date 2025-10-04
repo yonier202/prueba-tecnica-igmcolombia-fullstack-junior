@@ -10,4 +10,9 @@ export default defineConfig({
         }),
         vue(),
     ],
+    build: {
+    outDir: "public/build", // 👈 
+    manifest: true,
+    emptyOutDir: true,
+  },
 });
