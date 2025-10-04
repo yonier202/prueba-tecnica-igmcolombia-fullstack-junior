@@ -1,0 +1,128 @@
+{
+  "_Header-hrLG70pW.js": {
+    "file": "assets/Header-hrLG70pW.js",
+    "name": "Header",
+    "imports": [
+      "resources/js/app.js",
+      "_auth-BAoU2LL4.js"
+    ],
+    "assets": [
+      "assets/facturacion-CJQUdaO0.png"
+    ]
+  },
+  "_auth-BAoU2LL4.js": {
+    "file": "assets/auth-BAoU2LL4.js",
+    "name": "auth",
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_persona-D6-alxpE.js": {
+    "file": "assets/persona-D6-alxpE.js",
+    "name": "persona",
+    "imports": [
+      "resources/js/app.js",
+      "_auth-BAoU2LL4.js",
+      "_Header-hrLG70pW.js"
+    ]
+  },
+  "public/img/facturacion.png": {
+    "file": "assets/facturacion-CJQUdaO0.png",
+    "src": "public/img/facturacion.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-JezoITgi.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BIsRkKFh.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/modules/auth/views/Login.vue",
+      "resources/js/modules/auth/views/Register.vue",
+      "resources/js/modules/facturacion/views/FacturacionView.vue",
+      "resources/js/modules/roles/views/rolesView.vue",
+      "resources/js/modules/personas/views/PersonaView.vue"
+    ],
+    "css": [
+      "assets/app-JezoITgi.css"
+    ]
+  },
+  "resources/js/modules/auth/views/Login.vue": {
+    "file": "assets/Login-CB7bb8PI.js",
+    "name": "Login",
+    "src": "resources/js/modules/auth/views/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_auth-BAoU2LL4.js"
+    ],
+    "css": [
+      "assets/app-JezoITgi.css"
+    ]
+  },
+  "resources/js/modules/auth/views/Register.vue": {
+    "file": "assets/Register-Hjznl8oD.js",
+    "name": "Register",
+    "src": "resources/js/modules/auth/views/Register.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_auth-BAoU2LL4.js"
+    ],
+    "css": [
+      "assets/app-JezoITgi.css"
+    ]
+  },
+  "resources/js/modules/facturacion/views/FacturacionView.vue": {
+    "file": "assets/FacturacionView-BOchcNGd.js",
+    "name": "FacturacionView",
+    "src": "resources/js/modules/facturacion/views/FacturacionView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Header-hrLG70pW.js",
+      "resources/js/app.js",
+      "_persona-D6-alxpE.js",
+      "_auth-BAoU2LL4.js"
+    ],
+    "css": [
+      "assets/FacturacionView-BEnM3JDi.css",
+      "assets/app-JezoITgi.css"
+    ]
+  },
+  "resources/js/modules/personas/views/PersonaView.vue": {
+    "file": "assets/PersonaView-C8t7MoAk.js",
+    "name": "PersonaView",
+    "src": "resources/js/modules/personas/views/PersonaView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_persona-D6-alxpE.js",
+      "resources/js/app.js",
+      "_Header-hrLG70pW.js",
+      "_auth-BAoU2LL4.js"
+    ],
+    "css": [
+      "assets/app-JezoITgi.css"
+    ]
+  },
+  "resources/js/modules/roles/views/rolesView.vue": {
+    "file": "assets/rolesView-DEeyb4j7.js",
+    "name": "rolesView",
+    "src": "resources/js/modules/roles/views/rolesView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Header-hrLG70pW.js",
+      "resources/js/app.js",
+      "_auth-BAoU2LL4.js"
+    ],
+    "css": [
+      "assets/app-JezoITgi.css"
+    ]
+  }
+}
