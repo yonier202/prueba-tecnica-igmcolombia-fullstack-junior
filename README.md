@@ -1,11 +1,26 @@
 Instalacion
+----------
+1. ejecutar docker para la bd
+------------
+docker-compose up -d
+-----------
+2.configurar .env
+------------
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3307
+DB_DATABASE=facturacion_laravel
+DB_USERNAME=root
+DB_PASSWORD=root
+------------
 
---ejecutar migraciones y seeder
-1. Ejecutar php artisan migrate --seed
+3. Correr migraciones y seeder
+---------------
+php artisan migrate --seed
+----------------
+4. correr servidor
 
---correr servidor
-2. php artisan serve
-
+php artisan serve
 --------------
 ACCESO ADMINISTRADOR
 
