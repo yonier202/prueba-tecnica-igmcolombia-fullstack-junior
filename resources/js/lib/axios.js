@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://mysql-production-d94f.up.railway.app/api',
+    baseURL: 'https://prueba-tecnica-igmcolombia-fullstack-junior-production.up.railway.app/api',
 });
 
 api.interceptors.request.use((config) => {
