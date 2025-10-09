@@ -7,6 +7,8 @@ use App\Modules\Auth\Requests\LoginRequest;
 use App\Modules\Auth\Requests\RegisterRequest;
 use App\Modules\Auth\Services\AuthService;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Log;
+
 
 class AuthController extends Controller
 {
@@ -19,6 +21,7 @@ class AuthController extends Controller
 
     public function login(LoginRequest $request)
     {
+        Log::info('Login request received', $request->all());
         return $this->service->login($request->only(['email', 'password']));
     }
 
